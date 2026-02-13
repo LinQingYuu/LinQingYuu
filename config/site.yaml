@@ -66,6 +66,8 @@ categoryMap:
   项目: project
   站点文档和用户手册: support
   语言: language
+  后端笔记: backend
+  翻译: translate
 
 # =============================================================================
 # Featured Categories (Homepage)
@@ -81,7 +83,7 @@ featuredCategories:
   - link: docs 
     label: 文档
     image: /img/cover/2.webp
-    description: 生活记录、随想随笔
+    description: 开发文档
   - link: note 
     label: 随手记
     image: /img/cover/4.webp
@@ -110,7 +112,14 @@ featuredCategories:
     label: 语言
     image: /img/cover/21.webp
     description: 语言特性和小技巧
-
+  - link: backend
+    label: 后端笔记
+    image: /img/cover/15.webp
+    description: 后端开发笔记
+  - link: translate
+    label: 翻译
+    image: /img/cover/13.webp
+    description: 外文文档/资料翻译
 # =============================================================================
 # Featured Series
 # 精选系列功能 - 用于展示定期更新的系列内容（支持多个系列）
