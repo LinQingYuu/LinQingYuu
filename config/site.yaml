@@ -1,3 +1,4 @@
+
 # yaml-language-server: $schema=https://json-schema.org/draft-07/schema
 # =============================================================================
 # Site Configuration
@@ -11,17 +12,17 @@
 # Site Basic Information
 # =============================================================================
 site:
-  title: 余弦の博客 # 网站名称
-  alternate: cosine # 网站英文名称 用于页脚、Logo、@ handle 等
-  subtitle: WA 的一声就哭了 # 网站副标题
-  name: cos # 作者名称 - 请修改为你的名字
-  description: 一个基于 Astro 的现代化博客主题 # 网站描述
+  title: 轻语小窝 # 网站名称
+  alternate: LuoTianyi # 网站英文名称 用于页脚、Logo、@ handle 等
+  subtitle: 黑夜给了我黑色的眼睛，我却用它来寻找星星 # 网站副标题
+  name: LuoYun-Team # 作者名称 - 请修改为你的名字
+  description: 黑夜给了我黑色的眼睛，我却用它来寻找星星 # 网站描述
   avatar: /img/avatar.webp # 网站头像
-  showLogo: true # 是否显示 Logo
+  showLogo: false # 是否显示 Logo
   author: Author # 作者名称 - 请修改为你的名字
-  url: https://koharu.cosine.ren # 站点 URL 用于 RSS 和 SEO
+  url: https://www.20260712.xyz # 站点 URL 用于 RSS 和 SEO
   defaultOgImage: /img/avatar.webp # 默认 Open Graph 图片
-  startYear: 2024 # 建站年份
+  startYear: 2026 # 建站年份
   timezone: Asia/Shanghai # 时区配置 (IANA 格式)，用于日期显示和处理
   keywords: # SEO 关键词
     - 博客
@@ -57,18 +58,14 @@ i18n:
 # Example: '随笔' category URL becomes /categories/life
 # =============================================================================
 categoryMap:
-  # Primary categories
-  随笔: life
   笔记: note
   工具: tools
   周刊: weekly
-  # Secondary categories (for nested paths)
   前端: front-end
-  # Add more as needed:
-  # 书摘: reading
-  # 后端: back-end
-  # 算法: algorithm
-  # 项目: project
+  文档: docs
+  项目: project
+  站点文档和用户手册: support
+  语言: language
 
 # =============================================================================
 # Featured Categories (Homepage)
@@ -81,22 +78,38 @@ categoryMap:
 #   description: 分类描述文字，显示在卡片上
 # -----------------------------------------------------------------------------
 featuredCategories:
-  - link: life # 对应 categoryMap 中 随笔: life
-    label: 随笔
+  - link: docs 
+    label: 文档
     image: /img/cover/2.webp
     description: 生活记录、随想随笔
-  - link: note # 对应 categoryMap 中 笔记: note
-    label: 笔记
+  - link: note 
+    label: 随手记
     image: /img/cover/4.webp
     description: 技术笔记、学习笔记
-  - link: note/front-end # 嵌套分类：笔记/前端
-    label: 前端
+  - link: weekly 
+    label: 周刊
+    image: /img/cover/7.webp
+    description: 翻译、转载外文技术文档
+  - link: note/front-end
+    label: 前端笔记
     image: /img/cover/1.webp
-    description: 前端技术相关
-  - link: tools # 对应 categoryMap 中 工具: tools
+    description: 前端技术笔记
+  - link: tools 
     label: 工具
     image: /img/cover/11.webp
-    description: 工具使用、效率提升
+    description: 个人分享工具
+  - link: project 
+    label: 项目
+    image: /img/cover/12.webp
+    description: 项目文档、Changelog
+  - link: support
+    label: 站点文档和用户手册
+    image: /img/cover/17.webp
+    description: 用户手册
+  - link: language
+    label: 语言
+    image: /img/cover/21.webp
+    description: 语言特性和小技巧
 
 # =============================================================================
 # Featured Series
@@ -156,13 +169,13 @@ featuredSeries:
 # -----------------------------------------------------------------------------
 social:
   github:
-    url: https://github.com/your-username # 替换为你的 GitHub 链接
+    url: https://github.com/copytiao # 替换为你的 GitHub 链接
     icon: ri:github-fill # Remix Icon 的 GitHub 图标
     color: '#191717' # (可选) 图标颜色
   email:
-    url: mailto:your@email.com # 替换为你的邮箱，需加 mailto: 前缀
+    url: mailto:copytiao@20260712.xyz # 替换为你的邮箱，需加 mailto: 前缀
     icon: ri:mail-line
-    color: '#55acd5'
+    color: '#66ccff'
   rss:
     url: /rss.xml # 站内 RSS 订阅地址
     icon: ri:rss-line
@@ -225,24 +238,12 @@ friends:
       desc: FE / ACG / 手工 / 深色模式强迫症 / INFP / 兴趣广泛养两只猫的老宅女 / remote
       image: https://blog.cosine.ren/img/avatar.webp
       color: '#ed788b'
-    - site: 示例博客 A
-      url: https://example-a.com
-      owner: Alice
-      desc: 一个热爱技术的开发者
-      image: https://api.dicebear.com/7.x/avataaars/svg?seed=Alice
-      color: '#BEDCFF'
-    - site: 示例博客 B
-      url: https://example-b.com
-      owner: Bob
-      desc: 分享生活与技术的小站
-      image: https://api.dicebear.com/7.x/avataaars/svg?seed=Bob
-      color: '#FBC1CC'
-    - site: 示例博客 C
-      url: https://example-c.com
-      owner: Carol
-      desc: 记录学习与成长的地方
-      image: https://api.dicebear.com/7.x/avataaars/svg?seed=Carol
-      color: '#ABDCFF'
+    - site: 薄奚梦灵的小窝
+      url: https://copytiao.netlify.app
+      owner: 薄奚梦灵
+      desc: 华丽下暗藏的生活琐事
+      image: https://copytiao.netlify.app/assets/img/boximengling.png
+      color: '#66ccff'
 
 # =============================================================================
 # Announcements
@@ -335,17 +336,6 @@ content:
   previewCacheTime: 3600 # 预览缓存时间(秒)
   lazyLoadEmbeds: true # 延迟加载嵌入
   postCardImagePosition: alternating # 文章卡片封面图位置在首页的显示控制 alternating 默认交替显示 left 封面图始终在左侧 right 封面图始终在右侧
-  # Shoka 兼容功能（默认全部启用，设为 false 可关闭）
-  enableShokaContainers: true   # :::提醒块 ;;;标签卡 +++折叠块
-  enableShokaAttrs: true        # [text]{.class} 属性语法
-  enableShokaEffects: true      # ++下划线++ ==高亮== ~下标~ ^上标^
-  enableShokaSpoiler: true      # !!隐藏文字!!
-  enableShokaRuby: true         # {文字^注音} 注音标注
-  enableShokaHexoTags: true     # {% links %} {% media %} Hexo标签
-  enableMath: true              # $数学公式$ KaTeX渲染
-  enableCodeMeta: true          # 代码块增强 (title, mark, command)
-  enableQuiz: true              # 练习题交互功能
-  enableEncryptedBlock: true    # :::encrypted{password="..."} 加密内容块
 
 # =============================================================================
 # Navigation Routes
@@ -485,7 +475,7 @@ navigation:
     # path: # 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
     # lang: # 语言 (默认: 'zh-CN')
 comment:
-  provider: none  # 'remark42' | 'giscus' | 'waline' | 'twikoo' | 'none'
+  provider: waline  # 'remark42' | 'giscus' | 'waline' | 'none'
   # remark42:
   #   host: https://comment.example.com/
   #   siteId: your-site-id
@@ -500,25 +490,25 @@ comment:
   #   inputPosition: top               # 输入框位置 ('top' | 'bottom')
   #   lang: zh-CN                      # 语言
 
-  # waline:
-  #   serverURL: https://your-waline.vercel.app  # Waline 服务端地址 (必填)
-  #   lang: zh-CN                      # 语言 (默认: 'zh-CN')
-  #   dark: html.dark                  # 暗黑模式 (默认: 'html.dark')
+  waline:
+    serverURL: https://comments.20260712.xyz  # Waline 服务端地址 (必填)
+    lang: zh-CN                      # 语言 (默认: 'zh-CN')
+    dark: html.dark                  # 暗黑模式 (默认: 'html.dark')
   #                                    # 可选: true (自适应) | false (禁用) | CSS选择器字符串
-  #   meta:                            # 评论者信息字段 (默认: ['nick', 'mail', 'link'])
-  #     - nick
-  #     - mail
-  #     - link
+    meta:                            # 评论者信息字段 (默认: ['nick', 'mail', 'link'])
+     - nick
+     - mail
+     #- link
   #   requiredMeta:                    # 必填字段 (默认: [])
   #     - nick
-  #   login: enable                    # 登录模式 ('enable' | 'disable' | 'force', 默认: 'enable')
-  #   wordLimit: 0                     # 评论字数限制 (0 = 无限制, 默认: 0)
+    login: enable                    # 登录模式 ('enable' | 'disable' | 'force', 默认: 'enable')
+    wordLimit: [1,512]                     # 评论字数限制 (0 = 无限制, 默认: 0)
   #                                    # 可选: 单个数字 | [min, max] 数组
   #   pageSize: 10                     # 每页评论数 (默认: 10)
   #   imageUploader: false             # 图片上传功能 (默认: false)
   #   highlighter: true                # 代码高亮 (默认: true)
   #   texRenderer: false               # LaTeX 渲染 (默认: false)
-  #   search: false                    # 搜索功能 (默认: false)
+    search: true                    # 搜索功能 (默认: false)
   #   reaction: false                  # 文章反应功能 (默认: false)
   #                                    # 可选: true | false | 字符串数组 (自定义反应图标)
   #   emoji: true                      # 表情包配置 (默认: ['//unpkg.com/@waline/emojis@1.2.0/weibo'])
@@ -534,14 +524,9 @@ comment:
   #   comment: true                    # 评论数统计 (默认: true)
   #   pageview: true                   # 页面访问量统计 (默认: true)
   #   # recaptchaV3Key: ''             # reCAPTCHA v3 Key (可选)
-  #   # turnstileKey: ''               # Cloudflare Turnstile Key (可选)
+    turnstileKey: '0x4AAAAAACYJIAONNyVCPbCE'               # Cloudflare Turnstile Key (可选)
   #   # locale:                        # 自定义语言显示 (可选)
-  #   #   placeholder: '请留言...'      # 自定义输入框占位文本
-  twikoo:
-    envId: https://your-twikoo.vercel.app  # Twikoo 环境 ID (腾讯云) 或 Vercel 环境地址 (必填)
-    # region: ap-shanghai              # 环境地域，默认为 ap-shanghai
-    # path: location.pathname          # 用于区分不同文章的自定义 js 路径
-    # lang: zh-CN                     # 语言 (默认: 'zh-CN')
+    placeholder: '本站评论系统仅支持文本，图片、超长文档请使用外链提供 OwO'      # 自定义输入框占位文本
 
 # =============================================================================
 # Analytics (Umami)
@@ -552,7 +537,7 @@ comment:
 # -----------------------------------------------------------------------------
 analytics:
   umami:
-    enabled: true
+    enabled: false
     id: your-umami-id
     endpoint: https://stats.example.com
 
@@ -569,26 +554,16 @@ analytics:
 # -----------------------------------------------------------------------------
 seo:
   robots:
-    # policy:                          # 爬虫策略（可选，取消注释并配置）
-    #   - userAgent: '*'
-    #     allow: '/'
-    #     disallow:
-    #       - '/api/'
-    # host: true                       # 可选：添加 Host 指令（Yandex）
+    policy:                          # 爬虫策略（可选，取消注释并配置）
+       - userAgent: '*'
+         allow: '/'
+         disallow:
+           - '/api/'
+    host: true                       # 可选：添加 Host 指令（Yandex）
 
 # =============================================================================
 # Christmas/Seasonal Features
 # =============================================================================
-bgm:
-  enabled: true  # (有 audio 时自动启用，显式 false 可禁用)
-  audio:
-    - title: 最爱山山
-      list:
-        - https://music.163.com/playlist?id=8676645748
-    - title: Love Vocaloid
-      list:
-        - https://music.163.com/playlist?id=8882890045
-
 christmas:
   enabled: false # 总开关
   # features: # 各功能独立开关
