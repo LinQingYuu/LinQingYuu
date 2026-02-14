@@ -14,6 +14,10 @@ categories:
 draft: false
 ---
 
+原文连接：
+
+https://pytauri.github.io/pytauri/latest/usage/tutorial/getting-started/
+
 :::info
 
 如果你想要和 PyTauri 的维护者及用户交流，请考虑加入 PyTauri 的 [Discord 服务器](https://discord.gg/TaXhVp7Shw)。
