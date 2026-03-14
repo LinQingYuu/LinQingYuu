@@ -15,7 +15,7 @@ site:
   title: 轻语小窝 # 网站名称
   alternate: LuoTianyi # 网站英文名称 用于页脚、Logo、@ handle 等
   subtitle: 黑夜给了我黑色的眼睛，我却用它来寻找星星 # 网站副标题
-  name: LuoYun-Team # 作者名称 - 请修改为你的名字
+  name: 林轻语 # 作者名称 - 请修改为你的名字
   description: 黑夜给了我黑色的眼睛，我却用它来寻找星星 # 网站描述
   avatar: /img/avatar.webp # 网站头像
   showLogo: false # 是否显示 Logo
