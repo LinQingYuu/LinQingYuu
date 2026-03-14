@@ -2,6 +2,9 @@
   "name": "astro-koharu",
   "type": "module",
   "version": "3.0.9",
+  "pnpm":{
+    "neverBuiltDependencies": ]
+  },
   "scripts": {
     "dev": "astro dev",
     "generate:lqips": "npx tsx src/scripts/generateLqips.ts",
