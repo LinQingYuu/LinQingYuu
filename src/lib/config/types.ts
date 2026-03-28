@@ -25,6 +25,8 @@ export interface SiteBasicConfig {
   breadcrumbHome?: string;
   /** 时区配置 (IANA 格式) @default 'Asia/Shanghai' */
   timezone?: string;
+  /** ICP filing number. Supports plain text or { text, link } format */
+  icp?: string | { text: string; link?: string };
 }
 
 // =============================================================================
@@ -536,6 +538,19 @@ export interface BgmConfig {
 }
 
 // =============================================================================
+// Bangumi (Media Tracking) Configuration
+// =============================================================================
+
+export interface BangumiConfig {
+  /** Bangumi username or numeric ID */
+  userId: string;
+  /** Navigation display name, defaults to i18n key 'nav.bangumi' */
+  label?: string;
+  /** Navigation icon (Iconify format), defaults to 'ri:bilibili-fill' */
+  icon?: string;
+}
+
+// =============================================================================
 // i18n Configuration
 // =============================================================================
 
@@ -577,6 +592,8 @@ export interface SiteYamlConfig {
   categoryMap?: Record<string, string>; // TODO: i18n, now use eg: { '随笔': 'life' }
   /** Background music player configuration */
   bgm?: BgmConfig;
+  /** Bangumi media tracking page — comment out to disable */
+  bangumi?: BangumiConfig;
   christmas?: ChristmasConfig;
   /** Development tools configuration (dev only) */
   dev?: DevConfig;
