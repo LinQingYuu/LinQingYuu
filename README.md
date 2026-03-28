@@ -1,6 +1,6 @@
 # 林轻语
 
-/ PCL CE 开发 / 二游玩家 / V 厨 / PCL 社区协作者 / 文档魔人 / [天天](https://github.com/ruattd) / ISFP / 废柴高中生 / .NET / Minecraft /
+/ PCL CE 开发 / 二游玩家 / V 厨 / PCL 社区协作者 / 文档魔人 / 小蛋糕[天天](https://github.com/ruattd) / ISFP / 废柴高中生 / .NET / Minecraft /
 
 >[!IMPORTANT]
 >
@@ -53,7 +53,7 @@ Tauri / Avalonia
 
 ## 如何联系到我
 
-你可以直接在 [Issue 页面](https://github.com/copytiao/copytiao/issues)直接[创建 Issue]([https://github.com/copytiao/copytiao/issues/new](https://github.com/copytiao/copytiao/issues/new?assignees=copytiao&labels=Talk%2CWait+for+review&projects=&template=-talk--talk-with-me.md&title=%5BTalk%5D+)) 和我交流。
+你可以直接在 Issue 页面直接[创建 Issue](https://github.com/LinQingYuu/LinQingYuu/issues/new) 和我交流。
 
 >[!WARNING]
 >
