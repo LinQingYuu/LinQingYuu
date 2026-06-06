@@ -6,8 +6,6 @@
 >
 > 由于学业压力显著增大，工作日大多数事务将延迟到具有较大空闲处理（大型开发除外，会推迟到周末处理）
 
-![count](https://yourinsights.rqwq.link/api/insight?username=LinQingYuu&theme=ocean&graph=true&languages=true&streak=true&stats=true&header=true&summary=true&profile=false)
-
 ## 个人简介
 
  - 土生土长的南方人，不喜欢去人多的地方（所以不喜欢出门），讨厌复杂的人情社会，极度排斥阿谀奉承讨好别人的行为。<br>
@@ -25,6 +23,12 @@
  - 大冒险内容是唱一首歌（必须唱完），歌曲自选，由于没什么特别想唱的所以点歌台随便点了一首，刚好是权御天下。<br>
 （事后同学说我很适合唱这种歌）<br>
  - 入坑曲是《万古生香》，当时在 bilibili 2021 的跨年晚会听到的，听了一会感觉惊为天人。
+
+## 资料卡
+
+![count](https://yourinsights.rqwq.link/api/insight?username=LinQingYuu&theme=ocean&graph=true&languages=true&streak=true&stats=true&header=true&summary=true&profile=false)
+
+![data](https://github.com/LinQingYuu/LinQingYuu/raw/refs/heads/main/github-metrics.svg)
 
 ## 主语言
 
