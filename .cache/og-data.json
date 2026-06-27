@@ -420,5 +420,27 @@
       "logo": "https://docs.astro.build/favicon.ico"
     },
     "timestamp": 1768031593390
+  },
+  "https://pytauri.github.io/pytauri/latest/usage/tutorial/getting-started/": {
+    "data": {
+      "originUrl": "https://pytauri.github.io/pytauri/latest/usage/tutorial/getting-started/",
+      "url": "https://pytauri.github.io/pytauri/0.8/usage/tutorial/getting-started/",
+      "title": "Getting Started - PyTauri",
+      "description": null,
+      "image": "https://avatars.githubusercontent.com/u/126865849?v=4&size=72",
+      "logo": "https://pytauri.github.io/pytauri/latest/assets/favicon.png"
+    },
+    "timestamp": 1782585260732
+  },
+  "https://github.com/pytauri/pytauri/tree/main/examples/tauri-app": {
+    "data": {
+      "originUrl": "https://github.com/pytauri/pytauri/tree/main/examples/tauri-app",
+      "url": "https://github.com/pytauri/pytauri/tree/main/examples/tauri-app",
+      "title": "pytauri/examples/tauri-app at main · pytauri/pytauri",
+      "description": "Tauri binding for Python through Pyo3. Contribute to pytauri/pytauri development by creating an account on GitHub.",
+      "image": "https://opengraph.githubassets.com/267e1e8e0b1310545460af1972679877ebb2a6e7115b9eeeeb14bfdfc3a84965/pytauri/pytauri",
+      "logo": "https://github.com/fluidicon.png"
+    },
+    "timestamp": 1782585261540
   }
 }

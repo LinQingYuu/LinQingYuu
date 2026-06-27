@@ -10,7 +10,7 @@ description: "关于我？"
 
 [![github badge](https://img.shields.io/badge/dynamic/json?color=blue&label=Github&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DLinQingYuu)](https://github.com/LinQingYuu)
 
-> 琐事轻语，虽轻却萦绕耳边，最终留下不灭的痕迹。
+> 琐事 RyogiMutsuki 的，虽轻却萦绕耳边，最终留下不灭的痕迹。
 
 目前是选修物化地的高中生，主要技术栈集中在后端。
 
