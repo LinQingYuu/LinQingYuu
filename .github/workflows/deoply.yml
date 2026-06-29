@@ -60,8 +60,8 @@ jobs:
         
       - name: "deploy build"
         run: |
-          vercel pull --yes 
-          vercel build
+          vercel pull --yes --environment=production 
+          vercel build --prob
           vercel deploy --prod --prebuilt
           
         env:
