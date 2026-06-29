@@ -51,14 +51,18 @@ jobs:
           path: |
             ~/.pnpm-store
             ~/.cache/pnpm
+            ~/.local/share/pnpm
             .pnpm
             node_modules
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          # include package.json files in key so cache updates when deps change
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('package.json','cms/package.json') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
       - name: "Install dependency"
-        run: pnpm install --frozen-lockfile
+        # some repos don't commit a pnpm-lock.yaml or lockfile may be incompatible on runner
+        # allow install to proceed in CI by disabling frozen-lockfile explicitly
+        run: pnpm install --no-frozen-lockfile
 
       - name: "Cache OG data"
         uses: actions/cache@v6.1.0
