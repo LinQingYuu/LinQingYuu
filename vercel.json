@@ -7,5 +7,6 @@
         "distDir": "dist"
       }
     }
-  ]
+  ],
+  "outputDirectory": "dist"
 }
