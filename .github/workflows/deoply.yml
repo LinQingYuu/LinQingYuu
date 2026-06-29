@@ -47,7 +47,7 @@ jobs:
         run: npm install -g vercel@latest
 
       - name: "Install dependency"
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: "Cache OG data"
         uses: actions/cache@v6.1.0
@@ -58,11 +58,9 @@ jobs:
           restore-keys: |
             og-data-
 
-      - name: "Build page"
-        run: pnpm build
 
       - name: "deploy build"
-        run: vercel deploy --prebuilt --prod
+        run: vercel deploy --prod
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_PROJECT_TOKEN }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
