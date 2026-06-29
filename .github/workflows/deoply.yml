@@ -27,15 +27,16 @@ jobs:
       - name: "Checkout code"
         uses: "actions/checkout@v7.0.0"
 
+      - name: "Setup pnpm"
+        uses: pnpm/action-setup@v6.0.2
+        with:
+          version: 11.6.0
+
       - name: "Setup node.js"
         uses: "actions/setup-node@v6.4.0"
         with:
           node-version: "24.11.0"
-
-      - name: "Setup pnpm"
-        uses: pnpm/action-setup@v2
-        with:
-          version: 11.6.0
+          cache: 'pnpm'  # 利用 setup-node 的缓存功能
 
       - name: "Setup Python"
         uses: "actions/setup-python@v6.3.0"
@@ -45,23 +46,7 @@ jobs:
       - name: "prepare vercel cli"
         run: npm install -g vercel@latest
 
-      - name: "Cache pnpm store"
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.pnpm-store
-            ~/.cache/pnpm
-            ~/.local/share/pnpm
-            .pnpm
-            node_modules
-          # include package.json files in key so cache updates when deps change
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('package.json','cms/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
       - name: "Install dependency"
-        # some repos don't commit a pnpm-lock.yaml or lockfile may be incompatible on runner
-        # allow install to proceed in CI by disabling frozen-lockfile explicitly
         run: pnpm install --no-frozen-lockfile
 
       - name: "Cache OG data"
