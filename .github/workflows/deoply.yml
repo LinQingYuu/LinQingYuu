@@ -1,0 +1,63 @@
+name: "Deoply Vercel"
+
+on:
+    push:
+        paths-ignore:
+            - "README.md"
+            - "docker"
+            - "docs"
+            - "tests"
+            - ".cursorignore"
+            - ".npmrc"
+            - ".gitignore"
+            - "CHANGELOG.md"
+            - ".claude"
+            - "CLAUDE.md"
+            - "GETTING-STARTED.md"
+            - "LICENSE"
+            - "github-metrics.svg"
+            - "cliff.toml"
+jobs:
+    ci:
+
+        runs-on: ubuntu-latest
+
+        steps:
+
+            - name: "Checkout code"
+              uses: "actions/checkout@latest"
+
+            - name: "Setup node.js"
+              uses: "actions/setup-node@latest"
+              with: 
+                node-version: "24.11.0"
+                cache: "pnpm"
+            - name: "Setup Python"
+              uses: "actions/setup-python@latest"
+              with:
+                python-version: "3.14.6"
+            
+            - name: "prepare vercel cli"
+              run: npm install -g vercel@latest
+
+            - name: "Install dependency"
+              run: "pnpm install"
+
+            - name: "Cache OG data"
+              uses: actions/cache@v4
+              id: cache-og
+              with:
+                path: .cache/og-data.json
+                key: og-data-${{ hashFiles('src/content/**/*.md', 'src/content/**/*.mdx') }}
+                restore-keys: |
+                  og-data-
+            
+            - name: "Build page"
+              run: pnpm build
+
+            - name: "deoply build"
+              run: vercel deploy --prebuilt --prod
+              env: 
+                VERCEL_TOKEN: ${{ secrets.VERCEL_PROJECT_TOKEN }}
+                VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+                VERCEL_ORG_ID: ${{ secrets.VERCEL_TEAM_ID }}
