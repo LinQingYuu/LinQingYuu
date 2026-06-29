@@ -36,7 +36,7 @@ jobs:
         uses: "actions/setup-node@v6.4.0"
         with:
           node-version: "24.11.0"
-          cache: 'pnpm'  # 利用 setup-node 的缓存功能
+          cache: 'pnpm'  
 
       - name: "Setup Python"
         uses: "actions/setup-python@v6.3.0"
@@ -45,9 +45,6 @@ jobs:
 
       - name: "prepare vercel cli"
         run: npm install -g vercel@latest
-
-      - name: "Install dependency"
-        run: pnpm install --frozen-lockfile
 
       - name: "Cache OG data"
         uses: actions/cache@v6.1.0
