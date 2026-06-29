@@ -31,7 +31,8 @@ jobs:
               uses: "actions/setup-node@v6.4.0"
               with: 
                 node-version: "24.11.0"
-                cache: "pnpm"
+                cache: "npm"
+
             - name: "Setup Python"
               uses: "actions/setup-python@v6.3.0"
               with:
@@ -41,7 +42,7 @@ jobs:
               run: npm install -g vercel@latest
 
             - name: "Install dependency"
-              run: "pnpm install"
+              run: "npm install"
 
             - name: "Cache OG data"
               uses: actions/cache@v4
