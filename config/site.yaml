@@ -14,7 +14,7 @@
 site:
   title: RyogiMutsuki 的小窝 # 网站名称
   alternate: LuoTianyi # 网站英文名称 用于页脚、Logo、@ handle 等
-  subtitle: 黑夜给了我黑色的眼睛，我却用它来寻找星星 # 网站副标题
+  subtitle: 或许 七月初七 淮水竹亭 只是我一场泡影 # 网站副标题
   name: RyogiMutsuki # 作者名称 - 请修改为你的名字
   description: 黑夜给了我黑色的眼睛，我却用它来寻找星星 # 网站描述
   avatar: /img/avatar.webp # 网站头像
@@ -181,7 +181,7 @@ featuredSeries:
 # -----------------------------------------------------------------------------
 social:
   github:
-    url: https://github.com/copytiao # 替换为你的 GitHub 链接
+    url: https://github.com/RyogiMutsuki # 替换为你的 GitHub 链接
     icon: ri:github-fill # Remix Icon 的 GitHub 图标
     color: '#191717' # (可选) 图标颜色
   email:
